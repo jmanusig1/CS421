@@ -33,7 +33,7 @@ def letters_digits():
 
 	#not [0-9][A-Z][a-z]
 
-	return r"^[^A-Z]|[^a-z]|[^0-9]+$"
+	return r"^([^a-zA-Z0-9]+)$"
 
 
 # Q1(b): the set of strings that contain only uppercase letters or only lowercaseletters, but not both
@@ -117,7 +117,7 @@ def main():
 	p = re.compile(regex)
 
 	# Let us test our regex with a valid string
-	test = '['
+	test = 'heello123'
 	match = p.match(test)	
 	if match is None:
 		print('No Match: {0}'.format(test))
