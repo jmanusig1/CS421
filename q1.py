@@ -33,7 +33,7 @@ def letters_digits():
 
 	#not [0-9][A-Z][a-z]
 
-	return r"^[\W]+$"
+	return r"^[^0-9a-zA-Z]+$"
 
 
 # Q1(b): the set of string 
