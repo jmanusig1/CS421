@@ -33,10 +33,10 @@ def letters_digits():
 
 	#not [0-9][A-Z][a-z]
 
-	return r"^[^a-zA-Z0-9]+$"
+	return r"^[\W]+$"
 
 
-# Q1(b): the set of string
+# Q1(b): the set of string 
 def upper_lower():
 	# [YOUR CODE HERE]
 	return r"^[A-Z]+$|^[a-z]+$"
@@ -53,20 +53,20 @@ def plural_words():
 # Return: regex as a valid python string
 def alpha_ab():
 	# [YOUR CODE HERE]
-	return r"^((a|b)?(ba|b)*)$"
+	return r"^((a|b)(ba|b)*)$"
 
 
 # Q1(e): the set of all strings that start with a word and that end with one or more digits
 # Return: regex as a valid python string
 def word_digits():
-	return r"\w+[0-9]+"
+	return r"^[a-zA-Z]+[0-9]+$"
 
 
 # Q1(f): the set of all strings that have the exact words 'corona' and 'virus' in them
 # Return: regex as a valid python string
 def coronavirus():
 	# [YOUR CODE HERE]
-	return r"^(corona)+.*(virus)+$"
+	return r"^.*(corona)+.*(virus)+.*$"
 
 
 # Q1(g): the set of all strings that have exactly one digit in them
