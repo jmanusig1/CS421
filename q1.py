@@ -33,14 +33,14 @@ def letters_digits():
 
 	#not [0-9][A-Z][a-z]
 
-	return r"^([^a-zA-Z0-9]+)$"
+	return r"^[^a-zA-Z0-9]+$"
 
 
 # Q1(b): the set of strings that contain only uppercase letters or only lowercaseletters, but not both
 # Return: regex as a valid python string
 def upper_lower():
 	# [YOUR CODE HERE]
-	return ""
+	return r"^[A-Z]+$|^[a-z]+$"
 
 
 # Q1(c): the set of all plural English words, under the simplifying assumption that all English plurals end in s or es
@@ -111,13 +111,13 @@ def main():
 
 
 	# Get the regex from function
-	regex = letters_digits()
+	regex = upper_lower()
 
 	# Compile the regex
 	p = re.compile(regex)
 
 	# Let us test our regex with a valid string
-	test = 'heello123'
+	test = 'h'
 	match = p.match(test)	
 	if match is None:
 		print('No Match: {0}'.format(test))
@@ -126,7 +126,7 @@ def main():
 	
 	# Let us test our regex with an invalid string.
 	# Why is it invalid?
-	test = '[]'
+	test = 'llloooooDFool'
 	match = p.match(test)
 	if match is None:
 		print('No Match: {0}'.format(test))
