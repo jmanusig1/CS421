@@ -28,7 +28,7 @@ def capital_letters():
 
 # Q1(a): the set of strings that contain no letters or digits
 # Returns: regex as a valid python string
-def letters_digits():
+def letters_digits():   #empty string problem
 	# [YOUR CODE HERE]
 
 	#not [0-9][A-Z][a-z]
@@ -58,20 +58,20 @@ def alpha_ab():
 
 # Q1(e): the set of all strings that start with a word and that end with one or more digits
 # Return: regex as a valid python string
-def word_digits():
+def word_digits():   #TODO
 	return r"^[a-zA-Z]+[0-9]+$"
 
 
 # Q1(f): the set of all strings that have the exact words 'corona' and 'virus' in them
 # Return: regex as a valid python string
-def coronavirus():
+def coronavirus():		
 	# [YOUR CODE HERE]
-	return r"^.*(corona)+.*(virus)+.*$"
+	return r"^(.*(corona)+.*(virus)+.*|.*(virus)+.*(corona)+.*)$"
 
 
 # Q1(g): the set of all strings that have exactly one digit in them
 # Return: regex as a valid python string
-def one_digit():
+def one_digit():   #TODO 
 	# [YOUR CODE HERE]
 	return r"^[\D]*[0-9][\D]*$"
 
@@ -85,14 +85,14 @@ def slash():
 
 # Q1(i): the set of all strings that have no whitespace in them
 # Return: regex as a valid python string
-def whitespace():
+def whitespace():  #TODO
 	# [YOUR CODE HERE]
 	return r"^[\S]+$"
 
 
 # Q1(j):  the set of all English proper nouns, under the simplifying assumption that all English proper nouns have the first letter of each word capitalized
 # Return: regex as a valid python string
-def proper_nouns():
+def proper_nouns():		#TODO
 	# [YOUR CODE HERE]
 	return r"^[A-Z][a-zA-Z]*$"
 
