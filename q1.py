@@ -36,8 +36,7 @@ def letters_digits():
 	return r"^[^a-zA-Z0-9]+$"
 
 
-# Q1(b): the set of strings that contain only uppercase letters or only lowercaseletters, but not both
-# Return: regex as a valid python string
+# Q1(b): the set of string
 def upper_lower():
 	# [YOUR CODE HERE]
 	return r"^[A-Z]+$|^[a-z]+$"
@@ -47,55 +46,55 @@ def upper_lower():
 # Return: regex as a valid python string
 def plural_words():
 	# [YOUR CODE HERE]
-	return ""
+	return r"^([a-zA-Z])+(s|es)$"
 
 
 # Q1(d): the set of all strings from the alphabet a, b such that each a is never preceded or followed by another a
 # Return: regex as a valid python string
 def alpha_ab():
 	# [YOUR CODE HERE]
-	return ""
+	return r"^((a|b)?(ba|b)*)$"
 
 
 # Q1(e): the set of all strings that start with a word and that end with one or more digits
 # Return: regex as a valid python string
 def word_digits():
-	return ""
+	return r"\w+[0-9]+"
 
 
 # Q1(f): the set of all strings that have the exact words 'corona' and 'virus' in them
 # Return: regex as a valid python string
 def coronavirus():
 	# [YOUR CODE HERE]
-	return ""
+	return r"^(corona)+.*(virus)+$"
 
 
 # Q1(g): the set of all strings that have exactly one digit in them
 # Return: regex as a valid python string
 def one_digit():
 	# [YOUR CODE HERE]
-	return ""
+	return r"^[\D]*[0-9][\D]*$"
 
 
 # Q1(h): the set of all strings that have a slash (/) in them
 # Return: regex as a valid python string
 def slash():
 	# [YOUR CODE HERE]
-	return ""
+	return r"^.*/.*$"
 
 
 # Q1(i): the set of all strings that have no whitespace in them
 # Return: regex as a valid python string
 def whitespace():
 	# [YOUR CODE HERE]
-	return ""
+	return r"^[\S]+$"
 
 
 # Q1(j):  the set of all English proper nouns, under the simplifying assumption that all English proper nouns have the first letter of each word capitalized
 # Return: regex as a valid python string
 def proper_nouns():
 	# [YOUR CODE HERE]
-	return ""
+	return r"^[A-Z][a-zA-Z]*$"
 
 
 
@@ -111,13 +110,13 @@ def main():
 
 
 	# Get the regex from function
-	regex = upper_lower()
+	regex = word_digits()
 
 	# Compile the regex
 	p = re.compile(regex)
 
 	# Let us test our regex with a valid string
-	test = 'h'
+	test = 'abaa1'
 	match = p.match(test)	
 	if match is None:
 		print('No Match: {0}'.format(test))
@@ -126,7 +125,7 @@ def main():
 	
 	# Let us test our regex with an invalid string.
 	# Why is it invalid?
-	test = 'llloooooDFool'
+	test = 'babbbb'
 	match = p.match(test)
 	if match is None:
 		print('No Match: {0}'.format(test))
