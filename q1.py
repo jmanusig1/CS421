@@ -64,7 +64,7 @@ def word_digits():   #TODO
 
 # Q1(f): the set of all strings that have the exact words 'corona' and 'virus' in them
 # Return: regex as a valid python string
-def coronavirus():		
+def coronavirus():	#TODO	
 	# [YOUR CODE HERE]
 	# corona123virus corona virus
 	return r"^corona{1}\s+$"
@@ -74,7 +74,7 @@ def coronavirus():
 # Return: regex as a valid python string
 def one_digit():   #TODO 
 	# [YOUR CODE HERE]
-	return r"^[\D]*[0-9][\D]*$"
+	return r"^[0-9]$"
 
 
 # Q1(h): the set of all strings that have a slash (/) in them
@@ -86,7 +86,7 @@ def slash():
 
 # Q1(i): the set of all strings that have no whitespace in them
 # Return: regex as a valid python string
-def whitespace():  #TODO
+def whitespace():
 	# [YOUR CODE HERE]
 	return r"^[\S]*$"
 
