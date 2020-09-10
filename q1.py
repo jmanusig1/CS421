@@ -67,8 +67,8 @@ def word_digits():   #TODO
 # Return: regex as a valid python string
 def coronavirus():	#TODO	
 	# [YOUR CODE HERE]
-	# hwow!
-	return r"((\bcorona\b){1,}.*(\bvirus\b){1,})|((\bvirus\b){1,}.*(\bcorona\b){1,})"
+	# hwow teka lang!
+	return r"(?=.*\bvirus\b)(?=.*\bcorona\b)"
 
 
 # Q1(g): the set of all strings that have exactly one digit in them
