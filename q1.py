@@ -60,7 +60,7 @@ def alpha_ab():
 # Return: regex as a valid python string
 def word_digits():   #TODO
 	#gambare!
-	return r"^(\s*[a-zA-Z]+)\s+([0-9])+$"
+	return r"^(\s*[a-zA-Z]+)\s+([0-9])$"
 
 
 # Q1(f): the set of all strings that have the exact words 'corona' and 'virus' in them
@@ -94,7 +94,7 @@ def whitespace():
 
 # Q1(j):  the set of all English proper nouns, under the simplifying assumption that all English proper nouns have the first letter of each word capitalized
 # Return: regex as a valid python string
-def proper_nouns():		#TODO
+def proper_nouns():	
 	# [YOUR CODE HERE]
 	return r"^(\s*\b[A-Z][a-zA-Z]*\b\s*)+$"
 	#return r"^([A-Z][a-zA-Z]*)(\s[A-Z][a-zA-Z]*\s*)*$"
