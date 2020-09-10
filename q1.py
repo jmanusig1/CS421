@@ -96,7 +96,7 @@ def whitespace():
 # Return: regex as a valid python string
 def proper_nouns():		#TODO
 	# [YOUR CODE HERE]
-	return r"^([A-Z][a-zA-Z]*\s*)+$"
+	return r"^(\s*\b[A-Z][a-zA-Z]*\b\s*)+$"
 	#return r"^([A-Z][a-zA-Z]*)(\s[A-Z][a-zA-Z]*\s*)*$"
 
 
