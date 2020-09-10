@@ -72,7 +72,7 @@ def coronavirus():	#TODO
 
 # Q1(g): the set of all strings that have exactly one digit in them
 # Return: regex as a valid python string
-def one_digit():   #TODO 
+def one_digit(): 
 	# [YOUR CODE HERE]
 	return r"^[0-9]$"
 
@@ -95,7 +95,8 @@ def whitespace():
 # Return: regex as a valid python string
 def proper_nouns():		#TODO
 	# [YOUR CODE HERE]
-	return r"^([A-Z][a-zA-Z]*)(\s[A-Z][a-zA-Z]*\s*)*$"
+	return r"^([A-Z][a-zA-Z]*\s*)+$"
+	#return r"^([A-Z][a-zA-Z]*)(\s[A-Z][a-zA-Z]*\s*)*$"
 
 
 
