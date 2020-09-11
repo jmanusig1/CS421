@@ -70,7 +70,7 @@ def word_digits():   #TODO
 def coronavirus():	#TODO	
 	# [YOUR CODE HERE]
 	# hwow teka lang!
-	return r"(?=.*\bvirus\b)(?=.*\bcorona\b)"
+	return r"(.*\s+|\s*)corona(?=.*)(\s+.*\s+|\s+)virus(?=.*)(\s+.*|\s*)"
 
 
 # Q1(g): the set of all strings that have exactly one digit in them
@@ -115,13 +115,12 @@ def main():
 
 
 	# Get the regex from function
-	regex = word_digits()
-
+	regex = coronavirus()
 	# Compile the regex
 	p = re.compile(regex)
 
 	# Let us test our regex with a valid string
-	test = 'abaa1'
+	test = 'corona virus!'
 	match = p.match(test)	
 	if match is None:
 		print('No Match: {0}'.format(test))
