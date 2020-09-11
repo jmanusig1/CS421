@@ -69,7 +69,7 @@ def word_digits():   #TODO
 # Return: regex as a valid python string
 def coronavirus():	#TODO	
 	# [YOUR CODE HERE]
-	# hwow teka lang!
+	# hwow teka lang! wait
 	return r"(.*\s+|\s*)corona(?=.*)(\s+.*\s+|\s+)\bvirus\b(?=.*)(\s+.*|\s*)|(.*\s+|\s*)virus(?=.*)(\s+.*\s+|\s+)\bcorona\b(?=.*)(\s+.*|\s*)"
 
 
