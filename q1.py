@@ -70,7 +70,7 @@ def word_digits():   #TODO
 def coronavirus():	#TODO	
 	# [YOUR CODE HERE]
 	# hwow teka lang!
-	return r"(.*\s+|\s*)corona(?=.*)(\s+.*\s+|\s+)virus(?=.*)(\s+.*|\s*)|(.*\s+|\s*)virus(?=.*)(\s+.*\s+|\s+)corona(?=.*)(\s+.*|\s*)"
+	return r"(.*\s+|\s*)corona(?=.*)(\s+.*\s+|\s+)\bvirus\b(?=.*)(\s+.*|\s*)|(.*\s+|\s*)virus(?=.*)(\s+.*\s+|\s+)\bcorona\b(?=.*)(\s+.*|\s*)"
 
 
 # Q1(g): the set of all strings that have exactly one digit in them
