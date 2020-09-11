@@ -59,10 +59,10 @@ def alpha_ab():
 # Q1(e): the set of all strings that start with a word and that end with one or more digits
 # Return: regex as a valid python string
 def word_digits():   #TODO
-	#wow. naman. teka
+	#wow. naman. teka, wow
 	#return r"^(\s*\b[a-zA-Z]+\b)\s*([0-9])+$"
 
-	return r"^\s*\b[a-zA-Z]+\b\s*[0-9]+$"
+	return r"^\s*\b[a-zA-Z]+\b.*\s*[0-9]+$"
 
 
 # Q1(f): the set of all strings that have the exact words 'corona' and 'virus' in them
